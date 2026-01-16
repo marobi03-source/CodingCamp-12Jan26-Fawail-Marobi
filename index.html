@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Fawail Marobi</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    
+    <!-- header content -->
+   <header class="p-4 bg-white flex items-center">
+        <!-- logo -->
+        <div class="flex items-center gap-3"></div>
+        <div class="logo"></div>
+        <!-- nama perusahaan -->
+        <div class="brand">
+        <h1 class="font-mono text-xl font-bold text-orange-600 m-2">
+            Neko Go Gakuin
+        </h1>
+        <p class="font-mono text-sm text-gray-600 m-2">
+            ネコ語学院
+        </p>
+    </div>
+          <br>
+    
+        <!-- navigation -->
+        <nav class="ml-auto flex gap-3">
+            <a class="border p-2 rounded font-semibold bg-orange-400 text-white font-mono" href="#home-page">Home</a>
+            <a class="border p-2 rounded font-semibold bg-orange-400 text-white font-mono" href="#portofolio-page">Portofolio</a>
+            <a class="border p-2 rounded font-semibold bg-orange-400 text-white font-mono" href="#our-profile">Our Profile</a>
+            <a class="border p-2 rounded font-semibold bg-orange-400 text-white font-mono" href="#message-us">Message Us</a>
+        </nav>
+    </header>
+  
+   <hr>
+    <!-- main content -->
+    <main>
+        <section id="home-page" class="min-h-[600px] mx-4 text-center content-center bg-white">
+            <h2 class="text-2xl font-semibold font-mono text-center text-black-500 font-bold" id="welcome-speech">Welcome, Guest! to Neko Go Gakuin</h2>
+            <p class="text-xl mt-1 font-semibold font-mono text-center content-center text-orange-500 font-bold">Tempat belajar Jepang dengan suasana hangat, fun, dan tidak menakutkan bagi pemula.</p>
+        </section>
+        <br>
+        <hr>
+        <section id="portofolio-page" class="min-h-[600px] mx-4 text-center content-center bg-white">
+            <h2 class="text-2xl font-semibold font-mono text-left text-orange-500 pl-10">Our Portofolio</h2>
+            <p class="text-xl mt-1 font-semibold font-mono text-left pl-10">Berikut adalah beberapa proyek dan program yang menunjukkan kemampuan serta metode pembelajaran kami:</p>
+                <ul class="text-xl list-disc text-justify px-16 mt-2 font-mono font-semibold">
+                    <li class="text-orange-600">Japanese for Beginner Bootcamp <p class="text-black">Program 4 minggu untuk siswa pemula dengan fokus membaca Hiragana, Katakana, pengenalan diri, dan dasar percakapan.</p>
+                    <li class="text-orange-600">Anime Learning Project <p class="text-black">Modul belajar menggunakan cuplikan anime untuk melatih kemampuan listening, pengucapan, dan penambahan kosakata.</p>
+                    <li class="text-orange-600">Kaiwa Challenge <p class="text-black">Simulasi percakapan dalam berbagai situasi seperti di restoran, sekolah, dan lingkungan kerja.</p></li>
+                </ul>
+        </section>
+        <br>
+        <hr>
+        <section id="our-profile" class="min-h-[600px] mx-4 text-center content-center bg-white">
+            <h2 class="text-2xl font-semibold font-mono text-left text-orange-500 pl-10">About Neko Go Gakuin</h2>
+            <p class="text-xl mt-1 font-semibold font-mono pl-10 text-justify">Neko Go Gakuin adalah kursus bahasa Jepang fiktif dengan gaya belajar santai dan menyenangkan. Kami membantu siswa memahami bahasa Jepang untuk kebutuhan sekolah, hobi, dan persiapan kerja.</p>
+            <p class="text-xl mt-1 font-mono pl-10 text-justify font-semibold text-orange-600">Layanan Utama:</p>
+                <ul class="text-xl list-disc text-justify px-16 mt-1 font-mono font-semibold">
+                    <li>Kelas Hiragana & Katakana</li>
+                    <li>Percakapan sehari-hari (Kaiwa)</li>
+                    <li>Persiapan JLPT N5–N3</li>
+                    <li>Belajar dari anime & lagu Jepang</li>
+                </ul>
+        </section>    
+        <br>
+        <hr>
+        <section id="message-us" class="min-h-[600px] mx-4 text-center content-center bg-white">
+            <header>
+                <h2 class="text-2xl font-semibold font-mono text-left text-orange-500 pl-10">Message Us</h2>
+                <p class="text-xl mt-1 font-semibold font-mono text-left pl-10">Ada pertanyaan terkait kami? Kirimkan Pertanyaan anda dan kami akan membalasnya (^_^).</p>
+            </header>
+            <br>
+        <form>
+            <div class="pl-8 pr-8 mb-3">
+                <label class="font-mono block mb-2 text-left font-semibold" for="name">Name:</label>
+                <input class="w-full p-2 border rounded bg-orange-100" type="text" id="name" name="name" required>
+            </div>
+            <div class="pl-8 pr-8 mb-3">
+                <label class="font-mono block mb-2 text-left font-semibold" for="email">Email:</label>
+                <input class="w-full p-2 border rounded bg-orange-100" type="email" id="email" name="email" required>
+            </div>
+            <div class="pl-8 pr-8 mb-3">
+                <label class="font-mono block mb-2 text-left font-semibold" for="message">Message:</label>
+                <textarea class="w-full p-2 border rounded bg-orange-100" id="message" name="message" rows="4" required></textarea>
+            <p id="notif" class="hidden text-green-600 font-mono mb-3 pl-8">
+            Pesan berhasil terkirim! Terima kasih (^_^)
+            </p>
+            <div class="pl-8">
+                <button class="px-2 py-2 bg-orange-500 text-white rounded font-mono"
+                type="submit">
+                Send Message
+                </button>
+            </div>
+        </form>
+        </section>
+  
+    </main>
+
+    <br/>
+    <!-- footer content -->
+    <footer>
+        <p class="text-center p-4 bg-orange-300 text-mono"><i>© 2026 Neko Go Gakuin. All rights reserved.</i></p>
+    </footer>
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

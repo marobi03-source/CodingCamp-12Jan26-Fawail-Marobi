@@ -1,0 +1,17 @@
+.logo {
+    height: 80px;
+    width: 80px;
+
+    background-color: rgb(255, 136, 0);
+    border-radius: 50%;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1864/1864514.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
